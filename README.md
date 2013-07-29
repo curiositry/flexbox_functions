@@ -5,6 +5,9 @@ Flexbox is a CSS3 module that makes creating responsive layouts easier. However,
 
 For those who's preferred CSS preprocessor is PHP, I have made methods in the flexbox class for all the flexbox properties I know, which speeds up development greatly.
 
+For those who's preferred CSS preprocessor is PHP, I have made a flexbox class and put all the flexbox properties I know as methods of it. This speeds up flexbox development immensely.
+
+
 
 ### Usage
 
