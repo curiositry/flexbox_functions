@@ -3,7 +3,7 @@ Flexbox Functions
 
 Flexbox is a CSS3 module that makes creating responsive layouts easier. However, the spec is still in its infancy. The syntax has gone through three major revisions, and to support older browsers, it takes a minimum of four lines of code to do anything with flexbox.
 
-For those who's preferred CSS preprocessor is PHP, I have pull all the flexbox properties I know of into bite-sized functions that speed up development immensely.
+For those who's preferred CSS preprocessor is PHP, I have made methods in the flexbox class for all the flexbox properties I know, which speeds up development greatly.
 
 
 ### Usage
