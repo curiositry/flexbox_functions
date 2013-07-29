@@ -10,7 +10,7 @@ For those who's preferred css preprocessor is PHP, I have pull all the flexbox p
 
 Include `flexbox_functions.php` in `style.php`:
 
-```
+``` php
 <?php 
 header("Content-type: text/css"); 
 include("flexbox_functions.php");
@@ -19,5 +19,6 @@ include("flexbox_functions.php");
 
 Then call a flexbox function like this:
 
+``` php
+flexbox::order(1);
 ```
-
