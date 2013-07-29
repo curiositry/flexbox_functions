@@ -15,7 +15,7 @@
 // * flex
 // * order
 // * justify-content:
-//   - start
+// 	- start
 // 	- center
 // 	- end
 // 	- space-between
@@ -61,7 +61,7 @@ class flexbox{
 // Flexbox Initializations
 
 // display: flex
-public function display_flex(){
+static public function display_flex(){
   	echo "
 
 	display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
@@ -74,7 +74,7 @@ public function display_flex(){
 }
 
 // display: inline-flex
-public function display_inline_flex(){
+static public function display_inline_flex(){
   	echo "
 
 	display:-webkit-inline-box;      /* OLD - iOS 6-, Safari 3.1-6 */
@@ -88,7 +88,7 @@ public function display_inline_flex(){
 
 // flex: sets the fraction of available space to be used by element
 //  NOTE: A WIDTH MAY NEED TO BE SET TO KEEP ELEMENT FROM COLLAPSING WITH OLDER SYNTAX
-public function flex($value){
+static public function flex($value){
   	echo "
 
 	-webkit-box-flex: $value;      /* OLD - iOS 6-, Safari 3.1-6 */
@@ -102,7 +102,7 @@ public function flex($value){
 
 
 // order: sets the order that element will be displayed in (independent of source-code order!)
-public function order($value){
+static public function order($value){
   	echo "
 
 	-webkit-box-ordinal-group: $value;   /* OLD - iOS 6-, Safari 3.1-6 */
@@ -115,7 +115,7 @@ public function order($value){
 }
 
 // // Centers an element on the main axis
-// public function horizontal_center(){
+// static public function horizontal_center(){
 // 	echo "
 
 // 	-webkit-box-pack: center; 
@@ -129,7 +129,7 @@ public function order($value){
 
 
 // // Centers an element on the cross axis
-// public function vertical_center(){
+// static public function vertical_center(){
 //   	echo "
 
 // 	-webkit-box-align: center; 
@@ -144,7 +144,7 @@ public function order($value){
 
 // JUSTIFY CONTENT METHODS
 // justify-content: [flex-]start;
-public function justify_content_start(){
+static public function justify_content_start(){
   	echo "
 
 	-webkit-box-pack: start; 
@@ -158,7 +158,7 @@ public function justify_content_start(){
 
 
 // justify content center (main axis centering)
-public function justify_content_center(){
+static public function justify_content_center(){
   	echo "
 
 	-webkit-box-pack: center; 
@@ -172,7 +172,7 @@ public function justify_content_center(){
 
 
 // justify-content: [flex-]end;
-public function justify_content_end(){
+static public function justify_content_end(){
   	echo "
 
 	-webkit-box-pack: end; 
@@ -187,7 +187,7 @@ public function justify_content_end(){
 
 // justify-content: space-between;
 // distributes the space between but not before or after the elements
-public function justify_content_space_between(){
+static public function justify_content_space_between(){
   	echo "
 
 	-webkit-box-pack: justify; 
@@ -201,7 +201,7 @@ public function justify_content_space_between(){
 
 // justify-content: space-around;
 // distributes the space around the elements
-public function justify_content_space_around(){
+static public function justify_content_space_around(){
   	echo "
 
 	-webkit-box-pack: justify; 	/* The old syntax does not support space-around, so this falls back to space-between */
@@ -217,7 +217,7 @@ public function justify_content_space_around(){
 // ALIGN ITEMS METHODS
 // Align items aligns elements on the cross axis
 // align-items: [flex-]start
-public function align_items_start(){
+static public function align_items_start(){
   	echo "
 
 	-webkit-box-align: start; 
@@ -232,7 +232,7 @@ public function align_items_start(){
 
 
 // align-items: center
-public function align_items_center(){
+static public function align_items_center(){
   	echo "
 
 	-webkit-box-align: center; 
@@ -247,7 +247,7 @@ public function align_items_center(){
 
 
 // align-items: [flex-]end
-public function align_items_end(){
+static public function align_items_end(){
   	echo "
 
 	-webkit-box-align: end; 
@@ -262,7 +262,7 @@ public function align_items_end(){
 
 // align-items: baseline
 // If the flex item's inline axis is the same as the cross axis, this value is identical to 'flex-start'. Otherwise, it participates in baseline alignment: all participating flex items on the line are aligned such that their baselines align, and the item with the largest distance between its baseline and its cross-start margin edge is placed flush against the cross-start edge of the line.
-public function align_items_baseline(){
+static public function align_items_baseline(){
   	echo "
 
 	-webkit-box-align: baseline; 
@@ -277,7 +277,7 @@ public function align_items_baseline(){
 
 // align-items: stretch
 // Flex items are stretched such as the cross-size of the item's margin box is the same as the line while respecting width and height constraints.
-public function align_items_stretch(){
+static public function align_items_stretch(){
   	echo "
 
 	-webkit-box-align: stretch; 
@@ -296,7 +296,7 @@ public function align_items_stretch(){
 // Align-self: Individual cross-axis alignment. Override to align individual items along the cross-axis
 
 // align-self:auto
-public function align_self_auto(){
+static public function align_self_auto(){
   	echo "
 
 	-ms-flex-item-align: auto; 
@@ -308,7 +308,7 @@ public function align_self_auto(){
 }
 
 // align-self:start
-public function align_self_start(){
+static public function align_self_start(){
   	echo "
 
 	-ms-flex-item-align: start; 
@@ -320,7 +320,7 @@ public function align_self_start(){
 }
 
 // align-self:center
-public function align_self_center(){
+static public function align_self_center(){
   	echo "
 
 	-ms-flex-item-align: center; 
@@ -333,7 +333,7 @@ public function align_self_center(){
 
 
 // align-self:end
-public function align_self_end(){
+static public function align_self_end(){
   	echo "
 
 	-ms-flex-item-align: end; 
@@ -346,7 +346,7 @@ public function align_self_end(){
 
 
 // align-self:baseline
-public function align_self_baseline(){
+static public function align_self_baseline(){
   	echo "
 
 	-ms-flex-item-align: baseline;
@@ -358,7 +358,7 @@ public function align_self_baseline(){
 }
 
 // align-self:stretch
-public function align_self_stretch(){
+static public function align_self_stretch(){
   	echo "
 
 	-ms-flex-item-align: stretch;
@@ -376,7 +376,7 @@ public function align_self_stretch(){
 
 
 // align-content: start
-public function align_content_start(){
+static public function align_content_start(){
   	echo "
 
 	-ms-flex-line-pack: start; 
@@ -388,7 +388,7 @@ public function align_content_start(){
 }
 
 // align-content: center
-public function align_content_center(){
+static public function align_content_center(){
   	echo "
 
 	-ms-flex-line-pack: center; 
@@ -400,7 +400,7 @@ public function align_content_center(){
 }
 
 // align-content: end
-public function align_content_end(){
+static public function align_content_end(){
   	echo "
 
 	-ms-flex-line-pack: end; 
@@ -412,7 +412,7 @@ public function align_content_end(){
 }
 
 // align-content: space-between
-public function align_content_space_between(){
+static public function align_content_space_between(){
   	echo "
 
 	-ms-flex-line-pack: justify; 
@@ -424,7 +424,7 @@ public function align_content_space_between(){
 }
 
 // align-content: space-around
-public function align_content_space_around(){
+static public function align_content_space_around(){
   	echo "
 
 	-ms-flex-line-pack: distribute; 
@@ -436,7 +436,7 @@ public function align_content_space_around(){
 }
 
 // align-content: stretch
-public function align_content_stretch(){
+static public function align_content_stretch(){
   	echo "
 
 	-ms-flex-line-pack: stretch; 
@@ -454,7 +454,7 @@ public function align_content_stretch(){
 // Direction: specifying the direction of the main flexbox axis
 
 
-public function flex_direction_row(){
+static public function flex_direction_row(){
   	echo "
 
 	box-direction: normal;
@@ -464,7 +464,7 @@ public function flex_direction_row(){
 	";
 }
 
-public function flex_direction_row_reverse(){
+static public function flex_direction_row_reverse(){
   	echo "
 
 	box-direction: reverse;
@@ -474,7 +474,7 @@ public function flex_direction_row_reverse(){
 	";
 }
 
-public function flex_direction_column(){
+static public function flex_direction_column(){
   	echo "
 
 	box-direction: normal;
@@ -485,7 +485,7 @@ public function flex_direction_column(){
 }
 
 
-public function flex_direction_column_reverse(){
+static public function flex_direction_column_reverse(){
   	echo "
 
 	box-direction: reverse;
@@ -501,7 +501,7 @@ public function flex_direction_column_reverse(){
 // Firefox doesn't currently support this syntax
 
 
-public function flex_wrap_nowrap(){
+static public function flex_wrap_nowrap(){
   	echo "
 
 	box-lines: single;
@@ -510,7 +510,7 @@ public function flex_wrap_nowrap(){
 	";
 }
 
-public function flex_wrap_wrap(){
+static public function flex_wrap_wrap(){
   	echo "
 
 	box-lines: multiple;
@@ -520,7 +520,7 @@ public function flex_wrap_wrap(){
 }
 
 // 2009 syntax does not support reverse wrapping at this time
-public function flex_wrap_wrap_reverse(){
+static public function flex_wrap_wrap_reverse(){
   	echo "
 
     flex-wrap: wrap-reverse;
