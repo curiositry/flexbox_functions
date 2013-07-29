@@ -20,7 +20,7 @@ include("flexbox_functions.php");
 ?>
 ```
 
-Then call a flexbox function like this:
+Then call a flexbox method like this:
 
 ``` php
 flexbox::order(1);
