@@ -74,6 +74,10 @@ There is a method for each property & value that I know of in the Flexbox spec. 
 	- wrap
 	- wrap-reverse
 
+### Quirks
+- If you comment out a php flexbox class call in style.php, using *css* comments, it doesn't work. **You must use PHP comments inside the PHP tags**
+
 ### Conclusion
 
 Comments and critiques appreciated!
+

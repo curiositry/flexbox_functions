@@ -68,34 +68,6 @@ static public function order($value){
 	";
 }
 
-// // Centers an element on the main axis
-// static public function horizontal_center(){
-// 	echo "
-
-// 	-webkit-box-pack: center; 
-// 	-moz-box-pack: center;
-// 	-ms-flex-pack: center;
-// 	-webkit-justify-content: center;
-// 	justify-content: center;
-
-// 	";
-// }
-
-
-// // Centers an element on the cross axis
-// static public function vertical_center(){
-//   	echo "
-
-// 	-webkit-box-align: center; 
-// 	-moz-box-align: center; 
-// 	-ms-flex-align: center; 
-// 	-webkit-align-items: center;
-// 	-moz-align-items: center;
-// 	align-items: center;
-
-// 	";
-// }
-
 // JUSTIFY CONTENT METHODS
 // justify-content: [flex-]start;
 static public function justify_content_start(){
