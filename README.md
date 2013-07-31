@@ -26,4 +26,54 @@ Then call a flexbox method like this:
 flexbox::order(1);
 ```
 
+### Flexbox Methods & Structure
+
+There is a method for each property & value that I know of in the Flexbox spec. Order & value take a variable, but other than that I had to use separate methods for each value because of the changes in syntax.
+
+* display:flex
+* flex
+* order
+* justify-content:
+	- start
+	- center
+	- end
+	- space-between
+	- space-around
+
+* align-items:
+	- start
+	- center
+	- end
+	- baseline
+	- stretch
+
+* align-self:
+	- auto
+	- start
+	- center
+	- end
+	- baseline
+	- stretch
+	
+* align-content:
+	- start
+	- center
+	- end
+	- space-between
+	- space-around
+	- stretch
+
+* flex-direction:
+	- row
+	- row-reverse
+	- column
+	- column-reverse
+
+* flex-wrap:
+	- nowrap
+	- wrap
+	- wrap-reverse
+
+### Conclusion
+
 Comments and critiques appreciated!

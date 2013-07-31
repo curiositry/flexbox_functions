@@ -9,52 +9,6 @@
 
 //                                                       - Linus Torvalds
 
-// ===== Content Structure =====
-
-// * display:flex
-// * flex
-// * order
-// * justify-content:
-// 	- start
-// 	- center
-// 	- end
-// 	- space-between
-// 	- space-around
-
-// * align-items:
-// 	- start
-// 	- center
-// 	- end
-// 	- baseline
-// 	- stretch
-
-// * align-self:
-// 	- auto
-// 	- start
-// 	- center
-// 	- end
-// 	- baseline
-// 	- stretch
-	
-// * align-content:
-// 	- start
-// 	- center
-// 	- end
-// 	- space-between
-// 	- space-around
-// 	- stretch
-
-// * flex-direction:
-// 	- row
-// 	- row-reverse
-// 	- column
-// 	- column-reverse
-
-// * flex-wrap:
-// 	- nowrap
-// 	- wrap
-// 	- wrap-reverse
-
 
 class flexbox{
 
