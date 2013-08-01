@@ -1,13 +1,9 @@
 Flexbox Functions 
 =================
 
-Flexbox is a CSS3 module that makes creating responsive layouts easier. However, the spec is still in its infancy. The syntax has gone through three major revisions, and to support older browsers, it takes a minimum of four lines of code to do anything with flexbox.
+Flexbox is and awesome tool for responsive frontend development. However, the spec is still in its infancy: the syntax has gone through three major revisions, and to support older browsers, it takes 4+ lines of code to do almost anything anything with flexbox.
 
-For those who's preferred CSS preprocessor is PHP, I have made methods in the flexbox class for all the flexbox properties I know, which speeds up development greatly.
-
-For those who's preferred CSS preprocessor is PHP, I have made a flexbox class and put all the flexbox properties I know as methods of it. This speeds up flexbox development immensely.
-
-
+For those who's preferred CSS preprocessor is PHP, I have made a simple script that include methods for all the flexbox properties I know. It really eases the pain of working with flexbox.
 
 ### Usage
 
@@ -25,6 +21,9 @@ Then call a flexbox method like this:
 ``` php
 flexbox::order(1);
 ```
+### Demo
+I have included a demo I built with the script. It is a fully responsive three column layout that reorders to put the sidebar and widget area at the bottom on mobile devices. It's not perfect since it was built extremely quickly and somewhat sloppily, but it give an idea of how the script & flexbox can be used for responsive design.
+
 
 ### Flexbox Methods & Structure
 

@@ -1,19 +1,9 @@
 <?php
-// ___                      __      __        ___       __                    
-//  |   /\  |    |__/    | /__`    /  ` |__| |__   /\  |__)                   
-//  |  /~~\ |___ |  \    | .__/    \__, |  | |___ /~~\ |    .                 
-                                                                           
-//  __        __                 ___    ___       ___     __   __   __   ___  
-// /__` |__| /  \ |  |     |\/| |__      |  |__| |__     /  ` /  \ |  \ |__   
-// .__/ |  | \__/ |/\|     |  | |___     |  |  | |___    \__, \__/ |__/ |___ .
-
-//                                                       - Linus Torvalds
-
+// Flexbox Functions by omphalosskeptic: http://omphalosskeptic.github.io/flexbox_functions/
 
 class flexbox{
 
 // Flexbox Initializations
-
 // display: flex
 static public function display_flex(){
   	echo "
@@ -455,9 +445,6 @@ static public function flex_wrap_wrap_reverse(){
 
 	";
 }
-
-
-
 
 } // end flexbox class
 
