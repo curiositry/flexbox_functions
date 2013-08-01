@@ -26,21 +26,7 @@ I have included a demo I built with the script. It is a fully responsive three c
 
 ### Method Names
 When naming the methods I chose semantics and guess-ability over brevity. In general, they are: [property name]_[current syntax value]. If the property name or value has a hyphen it is replaced by an underscore, and colons are also replaced by underscores. For example: 
-```css
-display: flex;
-``` 
-becomes 
-```php
-display_flex()
-``` 
-and 
-```css
-flex-wrap: wrap-reverse;
-```
-becomes 
-```php
-flex_direction_row_reverse()
-```
+```display: flex;``` becomes ```display_flex()``` and ```flex-wrap: wrap-reverse;``` becomes ```flex_direction_row_reverse()```
 
 I plan to maintain another version with abbreviated method names in the future.
 
