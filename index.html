@@ -1,68 +1,81 @@
 <!doctype html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Demo &bull; Flexbox Functions</title>
-	<link rel="stylesheet" href="style.css" />
-</head>
-<body>
-	<div class="container">
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Flexbox Functions by omphalosskeptic</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/respond.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="stylesheets/ie.css">
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
-	<header>
-		<div class="logo"><img src="logo.png"alt=""></div>
-		<nav class="navigation">
-			<ul class="nav_list">
-				<li class="nav_item">
-					<a href="#" class="nav_link">Link 1</a>
-				</li>
-				<li class="nav_item">
-					<a href="#" class="nav_link">Link 2</a>
-				</li>
-				<li class="nav_item">
-					<a href="#" class="nav_link">Link 3</a>
-				</li>
-				<li class="nav_item">
-					<a href="#" class="nav_link">Link 4</a>
-				</li>
-			</ul>
-		</nav>
-	</header><br>
+  </head>
+  <body>
+      <div id="header">
+        <nav>
+          <li class="fork"><a href="https://github.com/omphalosskeptic/flexbox_functions">View On GitHub</a></li>
+          <li class="downloads"><a href="https://github.com/omphalosskeptic/flexbox_functions/zipball/master">ZIP</a></li>
+          <li class="downloads"><a href="https://github.com/omphalosskeptic/flexbox_functions/tarball/master">TAR</a></li>
+          <li class="title">DOWNLOADS</li>
+        </nav>
+      </div><!-- end header -->
 
-<br clear="all">
-	<div class="content">
-		<div class="main">
-			<h1>Main Content</h1><br>
-			<h1 id="flexbox-functions" class="wmd-title">Flexbox Functions </h1>
+    <div class="wrapper">
+
+      <section>
+        <div id="title">
+          <h1>Flexbox Functions</h1>
+          <p>This simple script makes Flexbox development painless while keeping your CSS manageable &amp; easy to maintain.</p>
+          <hr>
+          <span class="credits left">Project maintained by <a href="https://github.com/omphalosskeptic">omphalosskeptic</a></span>
+          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span>
+        </div>
+
+        <h1>
+<a name="flexbox-functions-" class="anchor" href="#flexbox-functions-"><span class="octicon octicon-link"></span></a>Flexbox Functions </h1>
 
 <p>Flexbox is and awesome tool for responsive frontend development. However, the spec is still in its infancy: the syntax has gone through three major revisions, and to support older browsers, it takes 4+ lines of code to do almost anything anything with flexbox.</p>
 
 <p>For those who's preferred CSS preprocessor is PHP, I have made a simple script that include methods for all the flexbox properties I know. It really eases the pain of working with flexbox.</p>
 
-<h3 id="usage" class="wmd-title">Usage</h3>
+<h3>
+<a name="usage" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>Usage</h3>
 
 <p>Include <code>flexbox_functions.php</code> in <code>style.php</code>:</p>
 
-<pre style="" class="prettyprint prettyprinted"><code class="language- php"><span class="pun">&lt;?</span><span class="pln">php 
-header</span><span class="pun">(</span><span class="str">"Content-type: text/css"</span><span class="pun">);</span><span class="pln"> 
-include</span><span class="pun">(</span><span class="str">"flexbox_functions.php"</span><span class="pun">);</span><span class="pln">
-</span><span class="pun">?&gt;</span></code></pre>
+<div class="highlight"><pre><span class="o">&lt;?</span><span class="nx">php</span> 
+<span class="nx">header</span><span class="p">(</span><span class="s2">"Content-type: text/css"</span><span class="p">);</span> 
+<span class="k">include</span><span class="p">(</span><span class="s2">"flexbox_functions.php"</span><span class="p">);</span>
+<span class="cp">?&gt;</span><span class="x"></span>
+</pre></div>
 
 <p>Then call a flexbox method like this:</p>
 
-<pre style="" class="prettyprint prettyprinted"><code class="language- php"><span class="pln">flexbox</span><span class="pun">::</span><span class="pln">order</span><span class="pun">(</span><span class="lit">1</span><span class="pun">);</span></code></pre>
+<div class="highlight"><pre><span class="nx">flexbox</span><span class="o">::</span><span class="na">order</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
+</pre></div>
 
-<h3 id="demo" class="wmd-title">Demo</h3>
+<h3>
+<a name="demo" class="anchor" href="#demo"><span class="octicon octicon-link"></span></a>Demo</h3>
 
 <p>I have included a demo I built with the script. It is a fully responsive three column layout that reorders to put the sidebar and widget area at the bottom on mobile devices. It's not perfect since it was built extremely quickly and somewhat sloppily, but it give an idea of how the script &amp; flexbox can be used for responsive design.</p>
 
-<h3 id="method-names" class="wmd-title">Method Names</h3>
+<h3>
+<a name="method-names" class="anchor" href="#method-names"><span class="octicon octicon-link"></span></a>Method Names</h3>
 
 <p>When naming the methods I chose semantics and guess-ability over brevity. In general, they are: [property name]_[current syntax value]. If the property name or value has a hyphen it is replaced by an underscore, and colons are also replaced by underscores. For example: 
 <code>display: flex;</code> becomes <code>display_flex()</code> and <code>flex-direction: row-reverse;</code> becomes <code>flex_direction_row_reverse()</code></p>
 
 <p>I plan to maintain another version with abbreviated method names in the future.</p>
 
-<h3 id="flexbox-methods-structure" class="wmd-title">Flexbox Methods &amp; Structure</h3>
+<h3>
+<a name="flexbox-methods--structure" class="anchor" href="#flexbox-methods--structure"><span class="octicon octicon-link"></span></a>Flexbox Methods &amp; Structure</h3>
 
 <p>There is a method for each property &amp; value that I know of in the Flexbox spec. Order &amp; value take a variable, but other than that I had to use separate methods for each value because of the changes in syntax.</p>
 
@@ -70,76 +83,95 @@ include</span><span class="pun">(</span><span class="str">"flexbox_functions.php
 <li>display:flex</li>
 <li>flex</li>
 <li>order</li>
-<li><p>justify-content:</p>
+<li>
+<p>justify-content:</p>
 
-<ul><li>start</li>
-<li>center</li>
-<li>end</li>
-<li>space-between</li>
-<li>space-around</li></ul></li>
-<li><p>align-items:</p>
-
-<ul><li>start</li>
-<li>center</li>
-<li>end</li>
-<li>baseline</li>
-<li>stretch</li></ul></li>
-<li><p>align-self:</p>
-
-<ul><li>auto</li>
+<ul>
 <li>start</li>
-<li>center</li>
-<li>end</li>
-<li>baseline</li>
-<li>stretch</li></ul></li>
-<li><p>align-content:</p>
-
-<ul><li>start</li>
 <li>center</li>
 <li>end</li>
 <li>space-between</li>
 <li>space-around</li>
-<li>stretch</li></ul></li>
-<li><p>flex-direction:</p>
-
-<ul><li>row</li>
-<li>row-reverse</li>
-<li>column</li>
-<li>column-reverse</li></ul></li>
-<li><p>flex-wrap:</p>
-
-<ul><li>nowrap</li>
-<li>wrap</li>
-<li>wrap-reverse</li></ul></li>
 </ul>
-
-<h3 id="quirks" class="wmd-title">Quirks</h3>
+</li>
+<li>
+<p>align-items:</p>
 
 <ul>
-<li>If you comment out a php flexbox class call in style.php, using <em>css</em> comments, it doesn't work. <strong>You must use PHP comments inside the PHP tags</strong></li>
+<li>start</li>
+<li>center</li>
+<li>end</li>
+<li>baseline</li>
+<li>stretch</li>
 </ul>
+</li>
+<li>
+<p>align-self:</p>
 
-<h3 id="conclusion" class="wmd-title">Conclusion</h3>
+<ul>
+<li>auto</li>
+<li>start</li>
+<li>center</li>
+<li>end</li>
+<li>baseline</li>
+<li>stretch</li>
+</ul>
+</li>
+<li>
+<p>align-content:</p>
+
+<ul>
+<li>start</li>
+<li>center</li>
+<li>end</li>
+<li>space-between</li>
+<li>space-around</li>
+<li>stretch</li>
+</ul>
+</li>
+<li>
+<p>flex-direction:</p>
+
+<ul>
+<li>row</li>
+<li>row-reverse</li>
+<li>column</li>
+<li>column-reverse</li>
+</ul>
+</li>
+<li>
+<p>flex-wrap:</p>
+
+<ul>
+<li>nowrap</li>
+<li>wrap</li>
+<li>wrap-reverse</li>
+</ul>
+</li>
+</ul><h3>
+<a name="quirks" class="anchor" href="#quirks"><span class="octicon octicon-link"></span></a>Quirks</h3>
+
+<ul>
+<li>If you comment out a php flexbox class call in style.php, using <em>css</em> comments, it doesn't work. <strong>You must use PHP comments inside the PHP tags</strong>
+</li>
+</ul><h3>
+<a name="conclusion" class="anchor" href="#conclusion"><span class="octicon octicon-link"></span></a>Conclusion</h3>
 
 <p>Comments and critiques appreciated! If you feel like supporting the development of Flexbox Functions for somewhere between the price of a coffee and the price of a peanut, <a href="https://flattr.com/thing/392659c5360cf80eded212bf7457609f">Flattr Me.</a></p>
-		</div><br><br>
+      </section>
 
-		<aside class="aside">
-		<h2>Sidebar</h2><br>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, ipsam, totam, magni delectus ad consectetur ab velit architecto impedit numquam doloremque blanditiis amet. Debitis, incidunt, quidem, blanditiis adipisci sapiente molestias ipsa nihil atque assumenda consequuntur sit facere?</p>
-		</aside><br>
-		<br clear="all"><br clear="all">
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+              <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("&lt;script&gt;   (function(i,s,o,g,r,a,m){i[&#39;GoogleAnalyticsObject&#39;]=r;i[r]=i[r]||function(){   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)   })(window,document,&#39;script&#39;,&#39;//www.google-analytics.com/analytics.js&#39;,&#39;ga&#39;);    ga(&#39;create&#39;, &#39;UA-42966771-1&#39;, &#39;omphalosskeptic.github.io&#39;);   ga(&#39;send&#39;, &#39;pageview&#39;);  &lt;/script&gt;");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
 
-
-		<div class="widgets">
-			<p></p><h3>Widget Area</h3><br><p>This is a bunch of unimportant widgets.</p></p>
-		</div>
-
-	</div>
-
-	<footer class="footer"><p>Hand-coded by omphalosskeptic as a demo for <a href="http://omphalosskeptic.github.io/flexbox_functions/">Flexbox Functions</a>.</p></footer>
-
-
-	</div> <!-- END CONTAINER -->
-</body>
+  </body>
 </html>
