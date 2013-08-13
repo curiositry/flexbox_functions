@@ -83,6 +83,6 @@ There is a method for each property & value that I know of in the Flexbox spec. 
 
 ### Conclusion
 
-Comments and critiques appreciated! If you feel like supporting the development of Flexbox Functions for somewhere between the price of a coffee and the price of a peanut, [Flattr Me.](https://flattr.com/thing/392659c5360cf80eded212bf7457609f)
+Comments and critiques appreciated! Since I don't have a dontation option, if you feel like supporting the development of Flexbox Functions tell you friends and followers about it. Spreading the word will make me happier than donating money.
 
 
