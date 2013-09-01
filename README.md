@@ -5,7 +5,7 @@ Flexbox is and awesome tool for responsive frontend development. However, the sp
 
 For those who's preferred CSS preprocessor is PHP, I have made a simple script that include methods for all the flexbox properties I know. It really eases the pain of working with flexbox.
 
-*NOTE: I have changed the License from GPL3 to MIT. This is a much more permissive licence -- if you need an even more permissive licence, let me know and it will probably be granted.*
+*NOTE: I have changed the License from GPL3 to MIT. This is a much more open-ended licence, and you can use it in non open source projects now. If you need an even more permissive licence, let me know and it will probably be granted.*
 
 ### Usage
 
