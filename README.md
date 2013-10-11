@@ -24,6 +24,15 @@ flexbox::order(1);
 ### Demo
 I have included a demo I built with the script. It is a fully responsive three column layout that reorders to put the sidebar and widget area at the bottom on mobile devices. It's not perfect since it was built extremely quickly and somewhat sloppily, but it give an idea of how the script & flexbox can be used for responsive design.
 
+[Large Screen](http://postimg.org/image/nzsi52l4z/ff_demo_lg.png)
+[Medium Screen](http://s21.postimg.org/juhlj5ncz/ff_demo_med.png)
+[Small Screen](http://s21.postimg.org/4x94i5a4j/ff_demo_xsmall2.png)
+[Small Screen — where the sidebars go](http://s21.postimg.org/nbjnm4mf7/ff_demo_xsmall.png)
+
+
+
+
+
 ### Method Names
 When naming the methods I chose semantics and guess-ability over brevity. In general, they are: [property name]_[current syntax value]. If the property name or value has a hyphen it is replaced by an underscore, and colons are also replaced by underscores. For example: 
 ```display: flex;``` becomes ```display_flex()``` and ```flex-direction: row-reverse;``` becomes ```flex_direction_row_reverse()```
