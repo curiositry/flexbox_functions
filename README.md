@@ -5,6 +5,8 @@ Flexbox is and awesome tool for responsive frontend development. However, the sp
 
 For those who's preferred CSS preprocessor is PHP, I have made a simple script that include methods for all the flexbox properties I know. It really eases the pain of working with flexbox.
 
+*NOTE: I have changed the License from GPL3 to MIT. This is a much more open-ended licence, and you can use it in non open source projects now. If you need an even more permissive licence, let me know and it will probably be granted.*
+
 ### Usage
 
 Include `flexbox_functions.php` in `style.php`:
@@ -92,6 +94,6 @@ There is a method for each property & value that I know of in the Flexbox spec. 
 
 ### Conclusion
 
-Comments and critiques appreciated! If you feel like supporting the development of Flexbox Functions for somewhere between the price of a coffee and the price of a peanut, [Flattr Me.](https://flattr.com/thing/392659c5360cf80eded212bf7457609f)
+Comments and critiques appreciated! Since I don't have a dontation option, if you feel like supporting the development of Flexbox Functions tell you friends and followers about it. Spreading the word will make me happier than donating money.
 
 
