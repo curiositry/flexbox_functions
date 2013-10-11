@@ -30,11 +30,11 @@ I have included a demo I built with the script. It is a fully responsive three c
 
 [Large Screen](http://postimg.org/image/nzsi52l4z/)
 
-[Medium Screen](http://s21.postimg.org/juhlj5ncz/)
+[Medium Screen](http://postimg.org/image/juhlj5ncz/)
 
-[Small Screen](http://s21.postimg.org/4x94i5a4j/)
+[Small Screen](http://postimg.org/image/4x94i5a4j/)
 
-[Small Screen — where the sidebars go](http://s21.postimg.org/nbjnm4mf7/)
+[Small Screen — where the sidebars go](http://postimg.org/image/nbjnm4mf7/)
 
 
 
