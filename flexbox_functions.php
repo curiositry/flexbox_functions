@@ -384,8 +384,10 @@ static public function flex_direction_row(){
   	echo "
 
 	box-direction: normal;
-    box-orient: horizontal;
-    flex-direction: row;
+  box-orient: horizontal;
+  -webkit-box-orient: horizontal;
+  flex-direction: row;
+  -webkit-flex-direction: row;
 
 	";
 }
@@ -394,8 +396,10 @@ static public function flex_direction_row_reverse(){
   	echo "
 
 	box-direction: reverse;
-    box-orient: horizontal;
-    flex-direction: row-reverse;
+  box-orient: horizontal;
+  -webkit-box-orient: horizontal;
+  flex-direction: row-reverse;
+  -webkit-flex-direction: row-reverse;
 
 	";
 }
@@ -404,8 +408,10 @@ static public function flex_direction_column(){
   	echo "
 
 	box-direction: normal;
-    box-orient: vertical;
-    flex-direction: column;
+  box-orient: vertical;
+  -webkit-box-orient: vertical;
+  flex-direction: column;
+  -webkit-flex-direction: column;
 
 	";
 }
@@ -415,8 +421,10 @@ static public function flex_direction_column_reverse(){
   	echo "
 
 	box-direction: reverse;
-    box-orient: vertical;
-    flex-direction: column-reverse;
+  box-orient: vertical;
+  -webkit-box-orient: vertical;
+  flex-direction: column-reverse;
+  -webkit-flex-direction: column-reverse;
 
 	";
 }
