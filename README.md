@@ -7,22 +7,29 @@ For those who's preferred CSS preprocessor is PHP, I have made a simple script t
 
 *NOTE: I have changed the License from GPL3 to MIT. This is a much more open-ended licence, and you can use it in non open source projects now. If you need an even more permissive licence, let me know and it will probably be granted.*
 
+### Installation
+``` composer install curiositry\flexbox_functions ```
+
 ### Usage
 
-Include `flexbox_functions.php` in `style.php`:
+Include via composer at the top of your `style.php`:
 
 ``` php
 <?php
 header("Content-type: text/css");
-include("flexbox_functions.php");
-?>
+include("../vendor/autoload.php");
+
+use curiositry\flexbox_functions as flexbox;
+
 ```
 
 Then call a flexbox method like this:
 
 ``` php
-flexbox::order(1);
+echo flexbox\order(1);
 ```
+
+
 ### Demo
 I have included a demo I built with the script. It is a fully responsive three column layout that reorders to put the sidebar and widget area at the bottom on mobile devices. It's not perfect since it was built extremely quickly and somewhat sloppily, but it give an idea of how the script & flexbox can be used for responsive design.
 
@@ -35,9 +42,6 @@ I have included a demo I built with the script. It is a fully responsive three c
 [Small Screen](http://postimg.org/image/4x94i5a4j/)
 
 [Small Screen — where the sidebars go](http://postimg.org/image/nbjnm4mf7/)
-
-
-
 
 
 ### Method Names
@@ -98,7 +102,4 @@ There is a method for each property & value that I know of in the Flexbox spec. 
 - If you comment out a php flexbox class call in style.php, using *css* comments, it doesn't work. **You must use PHP comments inside the PHP tags**
 
 ### Conclusion
-
 Comments and critiques appreciated! Since I don't have a dontation option, if you feel like supporting the development of Flexbox Functions tell you friends and followers about it. Spreading the word will make me happier than donating money.
-
-
