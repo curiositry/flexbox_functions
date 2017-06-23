@@ -1,6 +1,8 @@
 <?php 
 header("Content-type: text/css"); 
-include("flexbox_functions.php");
+include("../vendor/autoload.php");
+
+use curiositry\flexbox_functions as flexbox;
 
 ?>
 
@@ -11,14 +13,14 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 
 
 body{
-  <?php flexbox::display_flex(); ?> 
+  <?php echo flexbox\display_flex(); ?>
   height: 100%;
   font-size: 20px;
   line-height: 135%;
 }
 
 header{
-  <?php flexbox::display_flex(); ?> 
+  <?php echo flexbox\display_flex(); ?> 
   width: 100%;
   background-color: #F7DC68;
 }
@@ -54,9 +56,9 @@ h3{
 }
 
 .logo{
-  <?php flexbox::flex(1.5); ?> 
-  <?php flexbox::display_inline_flex(); ?> 
-  <?php flexbox::align_items_center(); ?>
+  <?php echo flexbox\flex(1.5); ?> 
+  <?php echo flexbox\display_inline_flex(); ?> 
+  <?php echo flexbox\align_items_center(); ?>
 }
 
 .logo img{
@@ -64,15 +66,15 @@ h3{
 }
 
 .navigation{
-  <?php flexbox::display_inline_flex(); ?> 
-  <?php flexbox::flex(4); ?>   
+  <?php echo flexbox\display_inline_flex(); ?> 
+  <?php echo flexbox\flex(4); ?>   
 }
 
 .nav_list{
-  <?php flexbox::display_inline_flex(); ?> 
-  <?php flexbox::flex(4); ?> 
-  <?php flexbox::justify_content_space_around(); ?>
-  <?php flexbox::align_items_center(); ?>
+  <?php echo flexbox\display_inline_flex(); ?> 
+  <?php echo flexbox\flex(4); ?> 
+  <?php echo flexbox\justify_content_space_around(); ?>
+  <?php echo flexbox\align_items_center(); ?>
   min-height: 70px;
   list-style-type: none;
   width: 100%;
@@ -81,33 +83,33 @@ h3{
 }
 
 .content{
-    <?php  flexbox::display_flex(); ?> 
+    <?php  echo flexbox\display_flex(); ?> 
 }
 
 .main{
   padding: 2%;
-  <?php flexbox::order(20); ?> 
-  <?php flexbox::flex(20); ?> 
+  <?php echo flexbox\order(20); ?> 
+  <?php echo flexbox\flex(20); ?> 
 }
 
 .aside{
   padding: 2%;
   padding-top: 23px;
-  <?php flexbox::order(30); ?> 
-  <?php flexbox::flex(5); ?> 
+  <?php echo flexbox\order(30); ?> 
+  <?php echo flexbox\flex(5); ?> 
 }
 
 .widgets{
   padding: 2%;
   padding-top: 23px;
-  <?php flexbox::order(10); ?> 
-  <?php flexbox::flex(4); ?> 
+  <?php echo flexbox\order(10); ?> 
+  <?php echo flexbox\flex(4); ?> 
 }
 
 .footer{
-  <?php flexbox::display_flex(); ?> 
-  <?php flexbox::justify_content_center(); ?>
-  <?php flexbox::align_items_end(); ?>
+  <?php echo flexbox\display_flex(); ?> 
+  <?php echo flexbox\justify_content_center(); ?>
+  <?php echo flexbox\align_items_end(); ?>
   padding: 20px;
   background-color: #112E31;
   color: #F7DC68;
@@ -123,13 +125,13 @@ h3{
 
 @media all and (max-width:600px){
   .content{
-    <?php flexbox::display_flex(); ?>
-    <?php flexbox::flex_direction_column(); ?>
-    <?php flexbox::align_items_start(); ?>
+    <?php echo flexbox\display_flex(); ?>
+    <?php echo flexbox\flex_direction_column(); ?>
+    <?php echo flexbox\align_items_start(); ?>
   }
 
   .widgets{
-    <?php flexbox::order(40); ?> 
+    <?php echo flexbox\order(40); ?> 
   }
 }
 
