@@ -1,0 +1,11 @@
+{
+    "name": "curiositry/flexbox_functions",
+    "description": "A Flexbox CSS pre-processor",
+    "type": "library",
+    "require": {
+        "php": "^5.6 || ^7.0"
+    },
+    "autoload": {
+        "files": [ "src/flexbox_functions.php" ]
+    }
+}
